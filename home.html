@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("BG1.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button {
+            background-color: #0074cc;
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #0059a8;
+        }
+
+        .button-title {
+            margin: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .button img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button class="button" onclick="openStudentDetails()">
+                <img src="student.png" alt="Student" />
+                <div class="button-title">Student Details</div>
+            </button>
+            <button class="button" onclick="openFaceRecognition()">
+                <img src="face_recognition.png" alt="Face Recognition" />
+                <div class="button-title">Face Recognition</div>
+            </button>
+            <button class="button" onclick="openAttendance()">
+                <img src="attendance.png" alt="Attendance" />
+                <div class="button-title">Attendance</div>
+            </button>
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="openTrainData()">
+                <img src="train_data.png" alt="Train Data" />
+                <div class="button-title">Train Data</div>
+            </button>
+            <button class="button" onclick="openPhotos()">
+                <img src="photos.png" alt="Photos" />
+                <div class="button-title">Photos</div>
+            </button>
+            <button class="button" onclick="exitApp()">
+                <img src="exit.png" alt="Exit" />
+                <div class="button-title">Exit</div>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same as in your previous code
+    </script>
+</body>
+</html>
